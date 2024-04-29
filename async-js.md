@@ -51,3 +51,45 @@
     • Asynchronous tasks wait in the queue
     • Queue ensures sequential handling of events
     • Event loop orchestrates this continous process
+
+
+# Intro to Asynchronous JS
+• JavaScript stands out with its heavy use of callbacks
+• Callbacks execute commands at later times, but their exact timing isn't guaranteed
+• We'll explore how to use callbacks asynchronously
+
+* Synchronous Code:
+    • Commands execute in a guaranteed order
+    • Example:
+
+    ```javascript
+    console.log("one");
+    console.log("two");
+    console.log("three");
+    ```
+* Asynchronous Code:
+    • Commands don't have a guaranteed order of execution
+    • Example using __'setTimeout'__:
+
+    ```js
+    console.log("start");
+
+    setTimeout(function() {
+        console.log("time is up!");
+    }, 1500);
+
+    console.log("end");
+    ```
+    • Output order: "start", "end", "time is up!"
+
+* Why Asynchronous Code?
+    • In the real world, events don't always happen predictably
+    • Examples:
+        - When fetching data from a server, response time varies due to network latency
+        - User interactions like key presses or clicks occur unpredictably
+    • Asynchronous code handles such uncertainty during program runtime
+
+* Key Takeaways
+    • Introduced asynchronous code
+    • Compared synchronous and asynchronous behaviour using __'setTimeout'__
+    • Asynchronous code handles unpredictable timing scenarios during program execution
