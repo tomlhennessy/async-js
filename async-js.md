@@ -93,3 +93,31 @@
     • Introduced asynchronous code
     • Compared synchronous and asynchronous behaviour using __'setTimeout'__
     • Asynchronous code handles unpredictable timing scenarios during program execution
+
+
+# Timeouts and Intervals
+• Asynchronous nature illustrated through 'setTimeout'
+• Familiarise with 'setTimeout usage for async concepts
+
+* setTimeout Basics:
+    • Accepts callback and time delay in milliseconds
+    • Non-blocking nature; code after 'setTimeout' runs without waiting
+    • Optional delay; defaults to zero if not specified
+
+* Predicting Execution Order:
+    • Common interview question: understanding code execution order
+    • 'setTimeout' execution doesn't block further lines
+
+* Additional Arguments:
+    • 'setTimeout' can take unlimited additional arguments
+    • Callback executes with provided arguments after the delay
+
+* Cancelling Timeouts:
+    • 'setTimeout' returns a special Timeout object
+    • Use 'clearTimeout' to cancel a pending timeout
+    • Variation in return value between NodeJS and browser environments
+
+* Running Intervals:
+    • 'setInterval' executes a callback repeatedly at a specified delay
+    • Similar arguments to 'setTimeout'
+    • Use 'clearInterval' to cancel an interval
